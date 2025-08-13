@@ -1,1 +1,38 @@
+#include <stdio.h>
 
+int main(){
+    char estado[30];
+    char codigo[30];
+    char cidade[30];
+    int populacao;
+    float area;
+    float pib;
+    int turisticos;
+
+    printf("Qual o nome do estado? \n");
+    scanf("%s", &estado);
+
+    printf("Qual o código da carta? \n");
+    scanf("%s", &codigo);
+
+    printf("Qual o nome da capital? \n");
+    scanf("%s", &cidade);
+
+    printf("Qual a população desse estado? \n");
+    scanf("%i", &populacao);
+
+    printf("Qual a área em Km² deste estado? \n");
+    scanf("%e", &area);
+
+    printf("Qual o PIB deste estado? \n");
+    scanf("%f", &pib);
+
+    printf("Quantos pontos turíticos tem a capital? \n");
+    scanf("%d", &turisticos);
+
+    printf("Código: %s - Estado: %s - Capital: %s\n", codigo, estado, cidade);
+    printf("População: %i - Área em Km²: %e PIB: %f\n", populacao, area, pib);
+    printf("Pontos Turísticos: %d\n", turisticos);
+
+
+}
