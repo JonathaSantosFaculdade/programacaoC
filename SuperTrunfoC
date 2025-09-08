@@ -8,6 +8,8 @@ int main(){
     float area;
     float pib;
     int turisticos;
+    float densp;
+    float pibcpt;
 
     printf("Qual o nome do estado? \n");
     scanf("%s", &estado);
@@ -30,9 +32,18 @@ int main(){
     printf("Quantos pontos turíticos tem a capital? \n");
     scanf("%d", &turisticos);
 
+    densp = (populacao) / area;
+    pibcpt = (pib) / populacao;
+
+    printf("*** Super Trunfo em C ***");
     printf("Código: %s - Estado: %s - Capital: %s\n", codigo, estado, cidade);
     printf("População: %i - Área em Km²: %e PIB: %f\n", populacao, area, pib);
     printf("Pontos Turísticos: %d\n", turisticos);
+    printf("A densidade populacional é: %.2fhab/km²", densp);
+    printf("O PIB per Capita é: %.2freais", pibcpt);
+
+
+
 
 
 }
